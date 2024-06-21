@@ -60,23 +60,22 @@ const WeatherForecast = () => {
                     <table>
                       <thead>
                         <tr>
-                        <td>Min</td>
-                        <td>Max</td>
+                          <td>Min</td>
+                          <td>Max</td>
                         </tr>
-                       
                       </thead>
                       <tbody>
                         <tr>
-                            <td>  {day.main.temp_min} °C</td>
-                            <td> {day.main.temp_max} °C</td>
+                          <td> {day.main.temp_min} °C</td>
+                          <td> {day.main.temp_max} °C</td>
                         </tr>
                         <tr>
-                            <td> Pressure </td>
-                            <td>  {day.main.pressure} hPa </td>
+                          <td> Pressure </td>
+                          <td> {day.main.pressure} hPa </td>
                         </tr>
                         <tr>
-                            <td> Humidity </td>
-                            <td>  {day.main.humidity}% </td>
+                          <td> Humidity </td>
+                          <td> {day.main.humidity}% </td>
                         </tr>
                       </tbody>
                     </table>
