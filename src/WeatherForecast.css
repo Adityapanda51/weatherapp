@@ -1,0 +1,113 @@
+
+.weather-forecast {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: orange;
+    
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; 
+    border: 1px solid orange;
+    
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .loader {
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  .forecast-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  td > .date {
+     display: none;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 600px) {
+    td > .date {
+        display: block;
+     }
+    .search-bar {
+      flex-direction: column;
+    }
+
+  
+    .search-bar input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar button {
+      margin-left: 0;
+    }
+  
+
+    table {
+      font-size: 14px; 
+    }
+    thead {
+        display: none;
+    }
+  
+    td {
+      display: block;
+      text-align: left;
+      margin-bottom: 20px; 
+      border-bottom: 1px solid #ddd; 
+      padding-bottom: 10px; 
+    }
+  
+    td > div {
+      margin-bottom: 5px;
+    }
+  }
+  
+  
+  
