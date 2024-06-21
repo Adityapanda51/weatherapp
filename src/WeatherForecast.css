@@ -6,17 +6,19 @@
   
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
     color: orange;
     
   }
+
   
   .search-bar {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    margin-left: 300px;
     
   }
   
@@ -40,6 +42,7 @@
   
   .loader {
     margin-top: 20px;
+    margin-left: 20px;
   }
   
   .error {
@@ -62,12 +65,13 @@
     padding: 10px;
     border: 1px solid #ddd;
   }
+
   td > .date {
      display: none;
   }
   
   th {
-    background-color: #f2f2f2;
+    background-color: orange;
   }
   
   @media (max-width: 600px) {
@@ -108,6 +112,4 @@
       margin-bottom: 5px;
     }
   }
-  
-  
   
